@@ -130,4 +130,20 @@ Datadog also sets a strong standard for unifying the three pillars of observabil
 
 ### 3. Splunk
 
+Splunk, the enterprise leader of log monitoring distinguishes itself from traditional log monitoring tools with its schema-on-read architecture. This means that  rather than waiting for structured data, it collects log exactly as they are - either structured, semi-structured or unstructured, and returns it in a structured format when queried. This flexibility makes it easily adaptable to your organization needs.
 
+Splunk's search processing language (spl) is also highly sophisticated with users claiming that it is more intuitive and powerful than every query language out there. This enables your team to sift through millions of events to pinpoint the root cause of an error, visualize these errors in charts and graph, and automatically alert you when necessary. Regardless, it comes with real tradeoffs - splunks cost of operation incredibly high as pricing increase with volume of data ingestion. its also requires a substantial hardware infrastructure to operate effectively.
+
+**Strength:**
+- Schema-on-read architecture - for data of all types
+- Highly sophisticated query language - search processing language
+- search speed and real-time processing
+- 
+
+### 4. Elastic
+
+Elastic combines a powerful search capability with log monitoring, metrics, security analytics and observability. Built on elastic search, it handles petabytes of data, enabling your team search through billions of logs in milliseconds.
+
+It also offers significant flexibility. Teams can self-host the Elastic Stack or use Elastic Cloud, customize data retention policies, build complex dashboards in Kibana, and integrate logs with metrics, traces, and security events in a single platform. The tradeoff is complexity — Elastic often requires more setup, tuning, and operational expertise than newer SaaS-first alternatives.
+
+Elastic is one of the most established names in log management, combining powerful search capabilities with an extensive ecosystem that includes log monitoring, metrics, security analytics, and observability.
