@@ -77,10 +77,9 @@ Here's how some of the best log monitoring tools compare:
 
 ### 1. PostHog
 
-PostHog is an all-in-one platform that brings [centralized log monitoring](/logs) to the same workspace as your [product analytics](/product-analytics), [session replay](/session-replay), [error tracking](/error-tracking), and feature flags – so you can debug user-facing 
-issues without switching between multiple tools.
+PostHog is an all-in-one platform that brings [centralized log monitoring](https://posthog.com/logs) to the same workspace as your [product analytics](https://posthog.com/product-analytics), [session replay](https://posthog.com/session-replay), [error tracking](https://posthog.com/error-tracking), and [feature flags](https://posthog.com/feature-flags) – so you can debug user-facing issues without switching between multiple tools.
 
-PostHog Logs only reached general availability in January 2026, yet it offers a unique debugging experience - frontend logs collected through posthog js are automatically connected to User IDs and session replays, making it possible to trace issues from a user's browser session to related backend events. It also includes an AI-powered log search and summarization to help teams investigate issues faster.
+PostHog Logs only reached general availability in January 2026, yet it offers a unique debugging experience - frontend logs collected through posthog js are automatically connected to User IDs and session replays, making it possible to trace issues from a user's browser session to related backend events. It also includes an [AI-powered](https://posthog.com/ai) log search and summarization to help teams investigate issues faster.
 
 **Strengths:**
 
@@ -92,9 +91,9 @@ PostHog Logs only reached general availability in January 2026, yet it offers a 
 
 **Community:**
 
-- PostHog is fully open source under the MIT license and fully maintained on [GitHub](https://github.com/PostHog/posthog).
-- The repository has 34k+ stars with 500+ contributors and daily commits by community members and developers
-- its development occurs [publicly](https://posthog.com/changelog)
+- PostHog is fully open source under the MIT license, with the codebase publicly available and maintained on [GitHub](https://github.com/PostHog/posthog).
+- The repository has 34.9k+ stars with 502+ contributors, with multiple commits per day from community and team members.
+- Product decisions and roadmap updates are shared [publicly](https://posthog.com/changelog)
 
 <CalloutBox icon="IconStarFilled" title="PostHog is best for..." type="fyi">
 PostHog is best for developers who want logs, analytics, session replay, feature flags, and error tracking in a single workspace.
@@ -117,11 +116,12 @@ Datadog also sets a strong standard for unifying the three pillars of observabil
 
 **Community:**
 
-- Closed-source (prioprietary) software-as-a-service (Saas)
+- Datadog's core product is Closed-source (prioprietary)
+- It maintains several open-source components and client libraries including [datadog-agent](https://github.com/DataDog/datadog-agent) and [integrations-core](https://github.com/DataDog/integrations-core) with several stars and contributors
 
 ### 3. Splunk
 
-Splunk distinguishes itself from other log monitoring tools with its schema-on-read architecture. Rather than requiring structured data upfront, it collects logs exactly as they are – structured, semi-structured, or unstructured – and returns them in a structured format at query time. This makes it a strong fit for teams dealing with logs of various formats and diverse sources.
+Splunk (now owned by Cisco) distinguishes itself from other log monitoring tools with its schema-on-read architecture. Rather than requiring structured data upfront, it collects logs exactly as they are – structured, semi-structured, or unstructured – and returns them in a structured format at query time. This makes it a strong fit for teams dealing with logs of various formats and diverse sources.
 
 Splunk's Search Processing Language (SPL) is one of the most powerful query languages in the log management space, enabling your team to sift through millions of events, pinpoint root causes, visualize results in charts and graphs, and set up automated alerts – all from a single centralized logging platform. Pricing isn't publicly listed and varies by model, so you'll need to [contact sales](https://www.splunk.com/en_us/products/pricing.html) for a quote.
 
@@ -133,6 +133,13 @@ Splunk's Search Processing Language (SPL) is one of the most powerful query lang
 - Unified platform for log monitoring and security analytics (SIEM)
 - Real-time search and processing at enterprise scale
 - Self-hosting option available for on-premises deployments
+
+**Community:**
+
+- Splunk's core platform is proprietary.
+- It maintains several open source components on [GitHub](https://github.com/splunk), 
+including security tools and SDKs like [splunk-sdk-python](https://github.com/splunk/splunk-sdk-python)(736+ stars, 80 contributors) and [attack_range](https://github.com/splunk/attack_range) (2.5k+ stars, 48 contributors).
+- Splunk has a large enterprise community with an active forum, annual conference, and thousands of apps on Splunkbase.
 
 
 ### 4. Elastic
@@ -148,6 +155,12 @@ Strength:
 - AI-assisted anomaly detection and log categorization
 - OpenTelemetry-native ingestion via the Elastic Agent and EDOT
 
+**Community:**
+ 
+- Elastic operates a multi-license model with open source options under the AGPL license alongside proprietary tiers.
+- Its GitHub organization holds some of the largest repositories in the search and observability ecosystem, including [Elasticsearch](https://github.com/elastic/elasticsearch) (76.9k+ stars, 2,149+ contributors) and [Kibana](https://github.com/elastic/kibana) (21.1k + stars, 1,205+ contributors)
+- Elastic maintains a large global community through its [Discuss forums](https://discuss.elastic.co/), contributor ecosystem, community events, and extensive marketplace of integrations and plugins.
+
 ### 5. Grafana Loki
 
 Grafana Loki is a log monitoring system designed for horizontal scalability and multi-tenant log aggregation. It is built for teams that need to handle large volumes of logs without letting storage costs grow out of control.
@@ -161,6 +174,12 @@ Its biggest strength lies in cost-efficient scalability. Rather than indexing ev
 - Multi-tenant deployments with tenant isolation
 - Native integration with Grafana and Prometheus ecosystems
 - Flexible LogQL queries and alerting
+
+**Community:**
+
+- Grafana Loki is fully open source, under the APGLv3 license and maintained publicly on [GitHub](https://github.com/grafana/loki) under the Grafana ecosystem
+- The repository has 28.3k+ stars and 1,255+ contributors, with active development from both Grafana Labs and community maintainers.
+- Loki benefits from Grafana's large observability community, with extensive documentation, community forums, and ecosystem integrations.
 
 ### 6.	OpenSearch
 
@@ -177,7 +196,16 @@ OpenSearch is closely integrated with the AWS ecosystem, particularly through th
 - OpenTelemetry-native ingestion via Data Prepper
 - Full observability stack – logs, metrics, and traces in one platform
 
+**Community**
+
+- OpenSearch is fully open sourced under the Apache 2.0 license allowing free use, modification, distribution, and sale.
+- It is actively maintained on [GitHub](https://github.com/opensearch-project/OpenSearch) with 13.1k+ stars and 496+ contributors
+
 ### 7. Betterstack
+
+## Which  log monitoring tool should you choose?
+
+- Want an all-in-one platform that connects logs to product analytics, session replays, error tracking, and feature flags? Go with PostHog
 
 
 
