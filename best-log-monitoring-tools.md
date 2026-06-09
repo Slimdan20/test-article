@@ -37,15 +37,6 @@ The best log monitoring tools give you more than raw log lines – they make it 
 
 This guide compares the best log monitoring tools, what features matter when choosing one, and who each tool is built for – so you can pick the right fit for your team.
 
-## How we chose these tools
-
-We selected tools based on the following criteria:
-
-- Real-world adoption by engineers, technical founders, DevOps teams, and SREs.
-- OpenTelemetry support.
-- Transparent, predictable pricing.
-- Fit for engineering teams at startups and scale-ups.
-
 ## What features do you need in a log monitoring tool?
 
 At the bare minimum, good log monitoring tools should offer:
@@ -70,17 +61,17 @@ The best monitoring tools go further to provide:
 
 Here's how some of the best log monitoring tools compare:
 
-|   | PostHog | Datadog  | Splunk  | Elastic  | Grafana loki  | Opensearch  | Betterstack | Axiom  |
-|---| ---    | ---     | ---  | ---  | ---   | --- | ---  | --- |
-|OpenTelemetry support       | ✅    | ✅  | ✅  | ✅  | ✅   | ✅ | ✅  | ✅  |
-|Self hosting      | ✅   | ❌  | ✅  | ✅  | ✅   | ✅ | ❌  | ❌  |
-|Free tier      | ✅    | ✅  | ✅ (Partial)  | ✅  | ✅   |  ✅  |  ✅  | ✅  |
+|   | PostHog | Datadog  | Splunk  | Elastic  | Grafana loki  | Opensearch  | Betterstack |
+|---| ---    | ---     | ---  | ---  | ---   | --- | ---  |
+|OpenTelemetry support       | ✅    | ✅  | ✅  | ✅  | ✅   | ✅ | ✅  |
+|Self hosting      | ✅   | ❌  | ✅  | ✅  | ✅   | ✅ | ❌  |
+|Free tier      | ✅    | ✅  | ✅ (Partial)  | ✅  | ✅   |  ✅  |  ✅  |
 |Open source      | ✅    | ❌  | ❌ | ✅   | ✅   | ✅  | ❌  | ❌  |
-|Transparent pricing      | ✅  | ✅  | ❌   | ✅   |  ✅  | ✅  | ✅  | ✅  |
-|RBAC & Audit logs      | partial    |   |   | ✅  |    | ✅ |   | ✅  |
-|Retention logs      | ✅ (partial)    |   |   | ✅   |  ✅  | ✅ |   | ✅  |
-|Alerting      |  ❌   |   |   |    |    | ✅ | ✅  |   |
-|Correlation with traces and metrics      |     |   |   |    |    | ✅ | ✅  |   |
+|Transparent pricing      | ✅  | ✅  | ❌   | ✅   |  ✅  | ✅  | ✅  |
+|RBAC & Audit logs      | partial    |   |   | ✅  |    | ✅ |   |
+|Retention logs      | ✅ (partial)    |   |   | ✅   |  ✅  | ✅ |   |
+|Alerting      |  ❌   |   |   |    |    | ✅ | ✅  |
+|Correlation with traces and metrics      |     |   |   |    |    | ✅ | ✅  |
 
 ## What's the best log monitoring tool?
 
@@ -97,7 +88,7 @@ PostHog Logs only reached general availability in January 2026, yet it offers a 
 - Frontend and backend logs linked to users and session replays automatically
 - OTel-native ingestion – no proprietary SDKs required
 - AI-assisted log search, summary, and debugging
-- Transparent usage-based pricing with 50 GB free per month
+- Transparent [usage-based pricing](https://posthog.com/pricing) with 50 GB free per month
 
 **Community:**
 
@@ -114,7 +105,7 @@ PostHog is best for developers who want logs, analytics, session replay, feature
 
 Datadog understood the limitations of traditional logging and addressed them through its "Logging without Limits" architecture. This enables you to decouple log ingestion from indexing so your team can ingest all logs, then decide what to index and what to archive.
 
-Datadog also sets a strong standard for unifying the three pillars of observability – logs, metrics, and traces – enabling your team to move from a metric spike directly to the related log that explains it, without switching tools. With 1,000+ integrations across cloud providers, services, and infrastructure tools, it is one of the most connected platforms in the category. However, all these features don't come cheap. while Datadog publishes base pricing starting at $15 host/month, costs compound quickly at scale, and its OpenTelemetry ingestion converts data to a proprietary format, creating vendor lock-in over time.
+Datadog also sets a strong standard for unifying the three pillars of observability – logs, metrics, and traces – enabling your team to move from a metric spike directly to the related log that explains it, without switching tools. With 1,000+ integrations across cloud providers, services, and infrastructure tools, it is one of the most connected platforms in the category. Log management, however, is billed separately from its infrastructure – [$0.10/GB ingested, and $1.70 per million events indexed](https://www.datadoghq.com/pricing/?product=log-management#products), and costs can compound quickly at scale. 
 
 **Strengths:**
 
@@ -130,20 +121,64 @@ Datadog also sets a strong standard for unifying the three pillars of observabil
 
 ### 3. Splunk
 
-Splunk, the enterprise leader of log monitoring distinguishes itself from traditional log monitoring tools with its schema-on-read architecture. This means that  rather than waiting for structured data, it collects log exactly as they are - either structured, semi-structured or unstructured, and returns it in a structured format when queried. This flexibility makes it easily adaptable to your organization needs.
+Splunk distinguishes itself from other log monitoring tools with its schema-on-read architecture. Rather than requiring structured data upfront, it collects logs exactly as they are – structured, semi-structured, or unstructured – and returns them in a structured format at query time. This makes it a strong fit for teams dealing with logs of various formats and diverse sources.
 
-Splunk's search processing language (spl) is also highly sophisticated with users claiming that it is more intuitive and powerful than every query language out there. This enables your team to sift through millions of events to pinpoint the root cause of an error, visualize these errors in charts and graph, and automatically alert you when necessary. Regardless, it comes with real tradeoffs - splunks cost of operation incredibly high as pricing increase with volume of data ingestion. its also requires a substantial hardware infrastructure to operate effectively.
+Splunk's Search Processing Language (SPL) is one of the most powerful query languages in the log management space, enabling your team to sift through millions of events, pinpoint root causes, visualize results in charts and graphs, and set up automated alerts – all from a single centralized logging platform. Pricing isn't publicly listed and varies by model, so you'll need to [contact sales](https://www.splunk.com/en_us/products/pricing.html) for a quote.
 
-**Strength:**
-- Schema-on-read architecture - for data of all types
-- Highly sophisticated query language - search processing language
-- search speed and real-time processing
-- 
+
+**Strengths:**
+
+- Schema-on-read architecture – ingest any log format without upfront parsing
+- SPL – one of the most powerful log analysis query languages in the category
+- Unified platform for log monitoring and security analytics (SIEM)
+- Real-time search and processing at enterprise scale
+- Self-hosting option available for on-premises deployments
+
 
 ### 4. Elastic
 
-Elastic combines a powerful search capability with log monitoring, metrics, security analytics and observability. Built on elastic search, it handles petabytes of data, enabling your team search through billions of logs in milliseconds.
+Elastic brings the world’s most popular search engine to log monitoring. Built on Elasticsearch, it can ingest and search through petabytes of log data in near-real-time, making it a strong choice for teams looking to investigate incidents across massive environments.
 
-It also offers significant flexibility. Teams can self-host the Elastic Stack or use Elastic Cloud, customize data retention policies, build complex dashboards in Kibana, and integrate logs with metrics, traces, and security events in a single platform. The tradeoff is complexity — Elastic often requires more setup, tuning, and operational expertise than newer SaaS-first alternatives.
+Its superpower is flexibility. With Elastic, you can build custom dashboards, define your own data models, and run complex searches across both structured and unstructured logs using ES|QL - its powerful query language. This makes it a strong choice if you want full control over how your log data is collected, processed and analyzed – whether self-hosted or via [Elastic Cloud](https://www.elastic.co/pricing).
 
-Elastic is one of the most established names in log management, combining powerful search capabilities with an extensive ecosystem that includes log monitoring, metrics, security analytics, and observability.
+Strength:
+- Search petabytes of log data in near-real-time
+- ES|QL for advanced log aggregation and analysis
+- Fully customizable pipelines, schemas, and dashboards
+- AI-assisted anomaly detection and log categorization
+- OpenTelemetry-native ingestion via the Elastic Agent and EDOT
+
+### 5. Grafana Loki
+
+Grafana Loki is a log monitoring system designed for horizontal scalability and multi-tenant log aggregation. It is built for teams that need to handle large volumes of logs without letting storage costs grow out of control.
+
+Its biggest strength lies in cost-efficient scalability. Rather than indexing every log line, Loki indexes only log metadata - enabling your team to keep storage requirements low, while making it possible to retain large amounts of log data and scaling your infrastructure without significant increase in operational cost. If you prefer a managed option, [Grafana Cloud](https://grafana.com/pricing/) offers 50 GB free per month, with Pro plans starting at $19/month.
+
+**Strengths:**
+
+- Cost-efficient log retention at scale
+- Horizontally scalable architecture
+- Multi-tenant deployments with tenant isolation
+- Native integration with Grafana and Prometheus ecosystems
+- Flexible LogQL queries and alerting
+
+### 6.	OpenSearch
+
+OpenSearch is a community-driven, open-source search and log analytics platform forked directly from Elasticsearch. It is built for teams who want Elasticsearch capabilities while retaining full control over their logging stack, without being tied to restrictive commercial licensing models or proprietary vendor lock-in.
+
+OpenSearch is closely integrated with the AWS ecosystem, particularly through the managed Amazon OpenSearch Service. Rather than spending time configuring complex log shippers, it gives you a ready-to-use, cloud-native pipeline, eliminating management overhead and letting you focus on troubleshooting and optimizing your application instead. OpenSearch is free to self-host – if your team prefers a managed option, you can use [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/pricing/), with pricing based on instance type and storage.
+
+
+**Strengths:**
+
+- Scalable full-text log search without vendor lock-in
+- PPL and SQL for flexible log querying and event analytics
+- Built-in alerting, anomaly detection, and forecasting
+- OpenTelemetry-native ingestion via Data Prepper
+- Full observability stack – logs, metrics, and traces in one platform
+
+### 7. Betterstack
+
+
+
+
