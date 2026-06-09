@@ -148,7 +148,7 @@ Elastic brings the world’s most popular search engine to log monitoring. Built
 
 Its superpower is flexibility. With Elastic, you can build custom dashboards, define your own data models, and run complex searches across both structured and unstructured logs using ES|QL - its powerful query language. This makes it a strong choice if you want full control over how your log data is collected, processed and analyzed – whether self-hosted or via [Elastic Cloud](https://www.elastic.co/pricing).
 
-Strength:
+**Strengths:**
 - Search petabytes of log data in near-real-time
 - ES|QL for advanced log aggregation and analysis
 - Fully customizable pipelines, schemas, and dashboards
@@ -177,7 +177,7 @@ Its biggest strength lies in cost-efficient scalability. Rather than indexing ev
 
 **Community:**
 
-- Grafana Loki is fully open source, under the APGLv3 license and maintained publicly on [GitHub](https://github.com/grafana/loki) under the Grafana ecosystem
+- Grafana Loki is fully open source, under the AGPLv3 license and maintained publicly on [GitHub](https://github.com/grafana/loki) under the Grafana ecosystem
 - The repository has 28.3k+ stars and 1,255+ contributors, with active development from both Grafana Labs and community maintainers.
 - Loki benefits from Grafana's large observability community, with extensive documentation, community forums, and ecosystem integrations.
 
@@ -185,7 +185,7 @@ Its biggest strength lies in cost-efficient scalability. Rather than indexing ev
 
 OpenSearch is a community-driven, open-source search and log analytics platform forked directly from Elasticsearch. It is built for teams who want Elasticsearch capabilities while retaining full control over their logging stack, without being tied to restrictive commercial licensing models or proprietary vendor lock-in.
 
-OpenSearch is closely integrated with the AWS ecosystem, particularly through the managed Amazon OpenSearch Service. Rather than spending time configuring complex log shippers, it gives you a ready-to-use, cloud-native pipeline, eliminating management overhead and letting you focus on troubleshooting and optimizing your application instead. OpenSearch is free to self-host – if your team prefers a managed option, you can use [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/pricing/), with pricing based on instance type and storage.
+OpenSearch is closely integrated with the AWS ecosystem, particularly through the managed Amazon OpenSearch Service. Rather than spending time configuring complex log shippers, it gives you a ready-to-use, cloud-native pipeline that reduces infrastructure management overhead and enable you focus on troubleshooting and optimizing your application instead. OpenSearch is free to self-host – if your team prefers a managed option, you can use [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/pricing/), with pricing based on instance type and storage.
 
 
 **Strengths:**
@@ -200,6 +200,7 @@ OpenSearch is closely integrated with the AWS ecosystem, particularly through th
 
 - OpenSearch is fully open sourced under the Apache 2.0 license allowing free use, modification, distribution, and sale.
 - It is actively maintained on [GitHub](https://github.com/opensearch-project/OpenSearch) with 13.1k+ stars and 496+ contributors
+- The community is driven by the Linux Foundation's OpenSearch Software Foundation, which manages a global developer ecosystem using public Slack channels, user forums, and a community-built marketplace for ingestion and dashboard plugins.
 
 ### 7. Betterstack
 
