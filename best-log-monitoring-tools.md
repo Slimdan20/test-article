@@ -278,7 +278,7 @@ Its greatest strength is simplicity. Rather than switching between multiple tool
 
 - Each repo has several stars and contributors, with frequent updates from team and community members.
 
-<CalloutBox icon="IconStarFilled" title="Betterstack is best for..." type="fyi">
+<CalloutBox icon="IconStarFilled" title="Better Stack is best for..." type="fyi">
 
 Teams that want a simple operational platform combining logs, uptime monitoring, incident management, on-call scheduling, and status pages in one place.
 
@@ -300,7 +300,7 @@ Teams that want a simple operational platform combining logs, uptime monitoring,
 
 - Need powerful log monitoring without the operational overhead of traditional observability platforms? Choose **Better Stack**.
 
-### Recommendations by team types
+### Recommendations by team type
 
 #### For solo developers and side projects
 
