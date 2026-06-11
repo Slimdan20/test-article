@@ -262,7 +262,7 @@ Teams that want Elasticsearch search capabilities without the tradeoff of propri
 
 ![Better Stack](./image/betterstack.png)
 
-Better Stack connects log management with uptime monitoring, incident management, on-call scheduling, and status pages in a single platform — making it one of the most operationally complete log monitoring tools on this list. 
+Better Stack connects log management with uptime monitoring, incident management, on-call scheduling, and status pages in a single platform – making it one of the most operationally complete log monitoring tools on this list. 
 
 Its greatest strength is simplicity. Rather than switching between multiple tools to monitor systems, investigate alerts, manage incident response, and communicate outages, you can handle everything from a single platform. [Pricing](https://betterstack.com/pricing) starts at $25/month and includes a generous free tier.
 
