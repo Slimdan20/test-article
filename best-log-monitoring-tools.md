@@ -80,7 +80,7 @@ Here's how some of the best log monitoring tools compare:
 
 PostHog is an all-in-one platform that brings [centralized log monitoring](https://posthog.com/logs) to the same workspace as your [product analytics](https://posthog.com/product-analytics), [session replay](https://posthog.com/session-replay), [error tracking](https://posthog.com/error-tracking), [AI observability](https://posthog.com/ai-observability), and [feature flags](https://posthog.com/feature-flags) – so you can debug user-facing issues without switching between multiple tools.
 
-PostHog Logs only reached general availability in January 2026, yet it offers a unique debugging experience - frontend logs collected through PostHog JS are automatically connected to User IDs and session replays, making it possible to trace issues from a user's browser session to related backend events. It also includes an [AI-powered](https://posthog.com/ai) log search and summarization to help teams investigate issues faster.
+PostHog [Logs](https://posthog.com/blog/tags/logs) only reached general availability in January 2026, yet it offers a unique debugging experience - frontend logs collected through PostHog JS are automatically connected to User IDs and session replays, making it possible to trace issues from a user's browser session to related backend events. It also includes an [AI-powered](https://posthog.com/ai) log search and summarization to help teams investigate issues faster.
 
 **Strengths:**
 
