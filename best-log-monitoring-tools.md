@@ -100,7 +100,7 @@ PostHog [Logs](https://posthog.com/blog/tags/logs) only reached general availabi
 
 <CalloutBox icon="IconStarFilled" title="PostHog is best for..." type="fyi">
 
-Developers who want logs, analytics, session replay, feature flags, and error tracking in a single workspace. It's also great for teams that want a generous free-tier offer, along with AI assisted log search and debugging.
+Developers who want logs, analytics, session replay, feature flags, and error tracking in a single workspace. It's also great for teams that want a generous free-tier offer, [error tracking](https://posthog.com/blog/best-error-tracking-tools), along with AI assisted log search and debugging.
 
 </CalloutBox>
 
